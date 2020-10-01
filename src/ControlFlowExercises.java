@@ -1,6 +1,8 @@
 public class ControlFlowExercises {
     public static void main(String[] args) {
 //  1 a.
+        //while loop count 5 to 15
+
         int i = 5;
         while (i <= 15) {
             System.out.println("while loop- i: " + i);
@@ -8,11 +10,20 @@ public class ControlFlowExercises {
         }
 
 //    b.
-        //while loop count 5 to 15
-
         //while loop count by 2s 0 to 100
 
+        int counter = 0;
+        do{
+            System.out.println(counter);
+            counter += 2;
+        } while (counter <= 100);
         //while loop count backwards by 5s 100 to -10
+
+        int count = 100;
+        do{
+            System.out.println(count);
+            count -= 5;
+        } while (count >= -10);
 
 //    c.
         //for loop count 5 to 15
