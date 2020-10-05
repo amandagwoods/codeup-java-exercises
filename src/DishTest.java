@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class DishTest {
     public static void main(String[] args) {
         Dish d = new Dish ();
@@ -5,6 +7,5 @@ public class DishTest {
         d.nameOfDish = "ice cream";
         d.wouldRecommend = true;
         d.printSummary();
-
     }
 }
