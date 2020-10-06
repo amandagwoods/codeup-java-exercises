@@ -3,30 +3,39 @@ package util;
 import java.util.Scanner;
 
 public class Input {
-    private Scanner sc = new Scanner (System.in);
+    private Scanner scanner;
 
-    public String getString(){
-        String userString = sc.nextLine();
-        return userString;
+    public Input() {
+        this.scanner = new Scanner(System.in);
     }
-    public boolean yesNo(){
+
+    //    ------methods
+    public String getString() {
+        return this.scanner.nextLine();
+    }
+
+    public boolean yesNo() {
         System.out.println("Yes or No?");
-        String userString = sc.nextLine();
-        if(userString.equalsIgnoreCase("y")
-                || userString.equalsIgnoreCase("yes")){
-            return true;
-        }else{
-            return false;
-        }
-
-    public int getInt (int min, int max){
-            System.out.println("What's a number between %d and %d?\n", min, max);
-            Scanner sc = new Scanner(System.in);
-            int userInput = sc.nextInt();
-
-            if((userInput < min) || (userInput > max)){
-                System.out.println("");
-            }
-        }
+        String input = this.scanner.nextLine();
+        return (input.trim().toLowerCase().startsWith("y") ||
+                input.trim().toLowerCase().equals("yes"));
+//        if (input.equalsIgnoreCase("y")
+//                || input.equalsIgnoreCase("yes")) {
+//            return true;
+//        } else {
+//            return false;
+//        }
     }
-}
+
+    public int getInt(int min, int max) {
+        System.out.printf("What's a number between %d and %d?\n", min, max);
+        String input = scanner.nextLine();
+        int num = Integer.parseInt(input);
+        if (num >= min && num <= max)
+            return num;
+        return num;
+    }
+
+//    public int getInt
+    }
+
