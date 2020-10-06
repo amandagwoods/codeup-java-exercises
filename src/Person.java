@@ -3,35 +3,40 @@ public class Person {
 //  Object basics
     private String name;
 
-    public Person(String personName){
-        this.name = personName;
+    public Person(String Name){
+       name = name;
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String personName) {
         this.name = name;
     }
 
+
     public void sayHello() {
         System.out.printf("hello %s", this.name);
+    }
+
+    public static void main(String[] args) {
+        Person bob = new Person("Bob");
+        System.out.println("bob's name = " + bob.getName());
+        bob.setName("amanda");
+        bob.sayHello();
 
 
 //  Understanding references
 
-    Person person1 = new Person("John");
-    Person person2 = new Person("John");
-    System.out.println(person1.getName().equals(person2.getName()));
-    System.out.println(person1 == person2);
+//
 //    1 = true, they are both "John" 2= false, they are different objects
 //    and have different numbers
 
 
-    Person person1 = new Person("John");
-    Person person2 = person1;
-    System.out.println(person1 == person2);
+//    Person person1 = new Person("John");
+//    Person person2 = person1;
+//    System.out.println(person1 == person2);
 //  true, they are now the some since they are made equal
 
     Person person1 = new Person("John");
