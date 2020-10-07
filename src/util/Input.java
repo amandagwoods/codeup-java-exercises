@@ -36,6 +36,17 @@ public class Input {
         return num;
     }
 
-//    public int getInt
+    public double getDouble(int i, int i1) {
     }
+
+//    public int getInt(){
+//    }
+//    public double getDouble(double min, double max){
+//        while (true){
+//            System.out.printf("Please ")
+//        }
+//    }
+}
+
+
 
