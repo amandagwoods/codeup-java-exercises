@@ -37,6 +37,7 @@ public class Input {
     }
 
     public double getDouble(int i, int i1) {
+        return 0;
     }
 
 //    public int getInt(){
