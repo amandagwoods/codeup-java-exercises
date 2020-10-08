@@ -11,14 +11,17 @@ public class ArraysExercises {
         persons[1] = new Person ("Trey");
         persons[2] = new Person ("Michael");
 
-       Person[] copyOfPersons = Arrays.copyOf(persons, persons.length+1);
+        for(Person p: persons){
+            System.out.println(p.getName());
+        }
 
-       System.out.println("copyOfPerson =" + copyOfPersons.length);
-       copyOfPersons[3] = new Person ("Phoenix");
-       System.out.println("Arrays.toString(copyOfPersons) =" + Arrays.toString(copyOfPersons));
+        Person[] copyOfPersons = Arrays.copyOf(persons, persons.length+1);
 
-       for(Person p: persons){
-           System.out.println(p.getName());
-       }
+//       System.out.println("copyOfPerson =" + copyOfPersons.length);
+//       copyOfPersons[3] = new Person ("Phoenix");
+//       System.out.println("Arrays.toString(copyOfPersons) =" + Arrays.toString(copyOfPersons));
+
+
+
     }
 }
