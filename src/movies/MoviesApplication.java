@@ -26,6 +26,14 @@ public class MoviesApplication {
                 for(Movie movie : movies){
                     System.out.println(movie.getName() + " -- " + movie.getCategory());
                 }
+            break;
+                case 2:
+                System.out.println("view movies in animated category");
+                    for(Movie movie : movies){
+                        if(movie.getCategory().equalsIgnoreCase("animated")){
+                            System.out.println(movie.getName() + " -- " + movie.getCategory());
+                        }
+                    }
                 break;
             default:
         }
