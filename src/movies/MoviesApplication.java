@@ -4,6 +4,8 @@ import util.Input;
 
 public class MoviesApplication {
 
+    static Movie[] movies = MoviesArray.findAll();
+
     public static void main(String[] args){
         Input input = new Input();//adding connection to already created input class
         Movie[] movies = MoviesArray.findAll();
@@ -34,8 +36,24 @@ public class MoviesApplication {
                             System.out.println(movie.getName() + " -- " + movie.getCategory());
                         }
                     }
+            case 3:
+                printMoviesByCategory("drama");
+                break;
+            case 4:
+                printMoviesByCategory("horror");
+                break;
+            case 5:
+                printMoviesByCategory("scifi");
                 break;
             default:
+        }
+    }
+    public static void printMoviesByCategory(String category){
+        System.out.println("view movies in animated category");
+        for(Movie movie : movies){
+            if(movie.getCategory().equalsIgnoreCase(category)){
+                System.out.println(movie.getName() + " -- " + movie.getCategory());
+            }
         }
     }
 }
