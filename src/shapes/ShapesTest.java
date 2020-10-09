@@ -2,7 +2,7 @@ package shapes;
 
 public class ShapesTest {
 
-    From Donelle Harris to Everyone: (4:05 PM) public static void main(String[] args){
+     public static void main(String[] args){
         Measurable myShape1 = new Rectangle(5,4);
         System.out.println("Shape 1 perimeter =" + myShape1.getPerimeter());
         System.out.println("Shape 1 area =" + myShape1.getArea());
