@@ -32,7 +32,7 @@ public class GradesApplication {
 
         System.out.println("Welcome!\n\n" +
             "Here are the GitHub usernames of our students\n\n"
-            + );
+            );
 
         searchUser(students);
     }
